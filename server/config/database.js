@@ -78,7 +78,7 @@
 //   connectionLimit: 10,
 // });
 const mysql = require("mysql2");
-
+require("dotenv").config();
 // Alternatively, you can use the connection string if you have it in the environment variable.
  const pool = mysql.createConnection(process.env.DATABASE_URL);
 
